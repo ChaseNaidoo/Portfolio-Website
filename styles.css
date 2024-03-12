@@ -288,8 +288,9 @@ html, body {
 
 .projects_section ul {
   list-style-type: none;
-  padding-left: 100px;
   color: rgb(196, 193, 199);
+  text-align: center;
+  width: 47%;
 }
 
 .projects_section ul li {
@@ -304,11 +305,10 @@ html, body {
 
 .project_container {
   border: 1px solid rgb(225, 200, 250);
-  width: 100%;
-  margin-left: -101px;
   padding-top: 75px;
-  padding-left: 100px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+  margin-left: -1px;
+  width: 100%;
 }
 
 .resume_section h1 {
@@ -334,7 +334,8 @@ html, body {
 }
 
 .button_text {
-  margin-left: 200px;
+  margin-left: -47%;
+  text-align: center;
 }
 
 .button_text a {
