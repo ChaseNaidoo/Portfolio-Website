@@ -345,12 +345,15 @@ html, body {
   padding-left: 100px;
   border-top: 1px solid rgb(225, 200, 250);
   padding-top: 20px;
+  padding-bottom: 10px;
+  margin-top: -40px;
 }
 
 .resume_entry h2 {
   font-size: 40px;
   margin-top: -20px;
   padding-top: 20px;
+  color: rgb(225, 200, 250);
 }
 
 .resume_entry p {
@@ -363,19 +366,21 @@ html, body {
 
 .resume_item h3 {
   font-size: 28px;
-  margin-top: -10px;
-  color: rgb(225, 200, 250);
+  margin-top: -20px;
+  color: white
 }
 
 .resume_item p {
   font-size: 18px;
   color: rgb(196, 193, 199);
+  margin-top: -15px;
 }
 
 .resume_item ul {
-  list-style-type: none;
-  padding-bottom: 30px;
-  margin-left: -40px;
+  padding-bottom: 50px;
+  margin-top: -5px;
+  margin-left: -10px;
+  color: rgb(196, 193, 199);
 }
 
 .contact_section h1 {
@@ -383,6 +388,61 @@ html, body {
   margin-top: 100px;
   font-size: 70px;
   padding-left: 100px;
+}
+
+.contact_form {
+  max-width: 1000px;
+  padding: 40px;
+  padding-right: 60px;
+  margin-top: -30px;
+  margin-left: 100px;
+  border: 1px solid rgb(225, 200, 250);
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  border: 1px solid ;
+  border-radius: 5px;
+}
+
+.contact_form button {
+  background: rgb(225, 200, 250);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  color: black;
+  border: 0px;
+  font-size: 16px;
+}
+
+.contact_form button:hover {
+  background-color: rgb(51, 51, 51);
+  color: rgb(225, 200, 250);
+}
+
+.contact_form label,
+.contact_form input,
+.contact_form textarea {
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"] {
+  height: 30px;
+  color: black;
+  padding-left: 5px;
+}
+
+.contact_form textarea {
+  color: black;
+  height: 100px;
+  padding-left: 5px;
 }
 
 .button {
