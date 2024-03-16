@@ -16,46 +16,8 @@ html, body {
     --color3: 10, 2, 120;
     --color4: 10, 2, 0;
     --color5: 0, 0, 0;
-    --circle-size: 100%;
-    --blending: hard-light;
+    --circle-size: 100vmax;
   }
-  
-  @keyframes moveInCircle {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes moveVertical {
-    0% {
-      transform: translateY(-50%);
-    }
-    50% {
-      transform: translateY(50%);
-    }
-    100% {
-      transform: translateY(-50%);
-    }
-  }
-  
-  @keyframes moveHorizontal {
-    0% {
-      transform: translateX(-50%) translateY(-10%);
-    }
-    50% {
-      transform: translateX(50%) translateY(10%);
-    }
-    100% {
-      transform: translateX(-50%) translateY(-10%);
-    }
-  }
-  
   
   .gradient-bg {
     width: 100vw;
@@ -63,89 +25,114 @@ html, body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
-    top: 0;
-    left: 0;
-  
-    svg {
-      display: none;
-    }
-  
-  
-    .gradients-container {
-      filter: url(#goo) blur(40px) ;
-      width: 100%;
-      height: 100%;
-    }
-  
-    .g1 {
-      position: absolute;
-      background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-  
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(50% - var(--circle-size) / 2);
-      left: calc(50% - var(--circle-size) / 2);
-  
-      transform-origin: center center;
-      animation: moveVertical 30s ease infinite;
-  
-      opacity: 1;
-    }
-  
-    .g2 {
-      position: absolute;
-      background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-  
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(50% - var(--circle-size) / 2);
-      left: calc(50% - var(--circle-size) / 2);
-      transform-origin: calc(50% - 400px);
-      animation: moveInCircle 20s reverse infinite;
-      opacity: 1;
-    }
-  
-    .g3 {
-      position: absolute;
-      background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(50% - var(--circle-size) / 2 + 200px);
-      left: calc(50% - var(--circle-size) / 2 - 500px);
-      transform-origin: calc(50% + 400px);
-      animation: moveInCircle 40s linear infinite;
-      opacity: 1;
-    }
-  
-    .g4 {
-      position: absolute;
-      background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-      width: var(--circle-size);
-      height: var(--circle-size);
-      top: calc(50% - var(--circle-size) / 2);
-      left: calc(50% - var(--circle-size) / 2);
-      transform-origin: calc(50% - 200px);
-      animation: moveHorizontal 40s ease infinite;
-      opacity: 0.7;
-    }
-  
-    .g5 {
-      position: absolute;
-      background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
-      mix-blend-mode: var(--blending);
-      width: calc(var(--circle-size) * 2);
-      height: calc(var(--circle-size) * 2);
-      top: calc(50% - var(--circle-size));
-      left: calc(50% - var(--circle-size));
-      transform-origin: calc(50% - 800px) calc(50% + 200px);
-      animation: moveInCircle 20s ease infinite;
-      opacity: 1;
-    }
   }
+  
+  svg {
+      display: none;
+  }
+  
+  .gradients-container {
+    filter: url(#goo) blur(40px);
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .g1, .g2, .g3, .g4, .g5 {
+    position: absolute;
+    border-radius: 50%;
+    mix-blend-mode: var(--blending);
+  }
+
+  .g1 {
+    background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    animation: moveVertical 30s ease infinite;
+    opacity: 1;
+  }
+  
+  .g2 {
+    background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 400px);
+    animation: moveInCircle 20s reverse infinite;
+    opacity: 1;
+  }
+  
+  .g3 {
+    background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 + 200px);
+    left: calc(50% - var(--circle-size) / 2 - 500px);
+    transform-origin: calc(50% + 400px);
+    animation: moveInCircle 40s linear infinite;
+    opacity: 1;
+  }
+  
+  .g4 {
+    background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2);
+    left: calc(50% - var(--circle-size) / 2);
+    transform-origin: calc(50% - 200px);
+    animation: moveHorizontal 40s ease infinite;
+    opacity: 0.7;
+}
+  
+  .g5 {      
+    background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+    width: calc(var(--circle-size) * 2);
+    height: calc(var(--circle-size) * 2);
+    top: calc(50% - var(--circle-size));
+    left: calc(50% - var(--circle-size));
+    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    animation: moveInCircle 20s ease infinite;
+    opacity: 1;
+  }
+
+  @keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+  @keyframes moveVertical {
+    0% {
+        transform: translateY(-50%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+    50% {
+        transform: translateX(50%) translateY(10%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+}
 
   .nav {
     place-content: flex-start;
@@ -185,6 +172,52 @@ html, body {
 
 .nav ul li a:hover {
   text-shadow: 0 0 10px rgb(5, 1, 255), 0 0 20px rgb(141, 82, 230), 0 0 30px white;
+  color: white;
+}
+
+.socials {
+  justify-content: flex-end;
+  border-radius: 999px;
+  display: flex;
+  flex-flow: row;
+  gap: 30px;
+  height: min-content;
+  overflow: visible;
+  padding: 0px 10px;
+  position: fixed;
+  top: 3%;
+  right: 100px;
+  z-index: 100;
+  color: black;
+  background-color: black;
+}
+
+.socials ul {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+.socials ul li {
+  display: inline-block;
+  margin-right: 20px;
+  color: rgb(225, 200, 250);
+}
+
+.socials ul li:hover {
+  text-shadow: 0 0 10px rgb(5, 1, 255), 0 0 20px rgb(141, 82, 230), 0 0 30px white;
+  color: white;
+}
+
+.socials .download_button {
+  border-radius: 999px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(225, 200, 250);
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+.socials .download_button:hover {
+  background-color: rgb(225, 200, 250);
   color: white;
 }
 
