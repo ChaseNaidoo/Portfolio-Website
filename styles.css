@@ -176,20 +176,20 @@ html, body {
 }
 
 .socials {
-  justify-content: flex-end;
+  justify-content: space-between;
   border-radius: 999px;
   display: flex;
   flex-flow: row;
   gap: 30px;
   height: min-content;
   overflow: visible;
-  padding: 0px 10px;
   position: fixed;
   top: 3%;
   right: 100px;
   z-index: 100;
   color: black;
   background-color: black;
+  padding: 5px 0px;
 }
 
 .socials ul {
@@ -199,6 +199,7 @@ html, body {
 .socials ul li {
   display: inline-block;
   margin-right: 20px;
+  padding-left: 10px;
 }
 
 .socials ul li a {
@@ -216,8 +217,8 @@ html, body {
   border-radius: 999px;
   background-color: rgb(51, 51, 51);
   color: rgb(225, 200, 250);
-  padding: 10px 30px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 
 .socials .download_button:hover {
