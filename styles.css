@@ -526,3 +526,156 @@ html, body {
 .button_text a:hover {
   text-shadow: 0 0 30px rgb(61, 1, 85), 0 0 2px rgb(225, 174, 246), 0 0 40px white;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    top: 10%;
+    left: 37px; 
+    font-size: 14px;
+    position: absolute;
+  }
+
+  .socials {
+    top: 64%;
+    position: absolute;
+    background: none;
+  }
+
+  .socials ul li a {
+    font-size: 14px;
+    padding-left: 110px;
+  }
+
+  .socials .download_button {
+    display: none;
+  }
+
+  .logo_portfolio img {
+    left: 18%;
+    position: absolute;
+  }
+
+  .text h1 {
+    margin-top: 100px;
+    padding: 50px;
+    font-size: 36px;
+  }
+
+  .desription h2 {
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 220px; 
+    font-size: 26px;
+    color: rgb(225, 200, 250);
+  }
+
+  .stack p {
+    padding-top: 300px;
+    padding-left: 50px;
+    font-size: 18px;
+  }
+
+  .stack ul {
+    padding-left: 60px;
+    font-size: 10px;
+  }
+
+  .stack ul li {
+    margin-bottom: 10px;
+  }
+
+  .project_images {
+    height: 200px;
+    width: 374px; 
+    padding-left: 20px;
+  }
+
+  .projects_section h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .projects_section h2 {
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  .projects_section p {
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 300px;
+  }
+
+  .button {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .button_text a {
+    font-size: 14px;
+    margin-right: 25px;
+    margin-left: -20px;
+  }
+
+  .project_container ul {
+    margin-right: 40px;
+  }
+
+  .project_container ul li {
+    font-size: 12px;
+  }
+
+  .projects_wrapper {
+    margin-left: -1px;
+    margin-right: 1px;
+    overflow-x: hidden;
+  }
+
+  .resume_section h1 {
+    margin-top: 50px;
+    font-size: 40px; 
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  .resume_entry {
+    padding-left: 20px;
+  }
+
+  .resume_entry h2 {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+
+  .resume_item {
+    padding-bottom: 60px;
+  }
+
+  .contact_section h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  .contact_form {
+    margin-left: 20px; 
+    margin-right: 20px;
+    padding: 30px;
+    padding-right: 40px;
+  }
+
+  .contact_form button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .contact_form label,
+  .contact_form input,
+  .contact_form textarea {
+    font-size: 14px;
+  }
+}
