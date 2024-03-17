@@ -227,6 +227,13 @@ html, body {
   color: white;
 }
 
+.logo {
+  height: 18px;
+  width: 18px;
+  padding-right: 10px;
+  align-items: center;
+}
+
 .text h1 {
   position: absolute;  
   z-index: 2;
