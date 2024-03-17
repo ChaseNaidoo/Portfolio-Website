@@ -234,6 +234,16 @@ html, body {
   align-items: center;
 }
 
+.logo_portfolio img {
+  position: fixed;
+  z-index: 100;
+  height: 200px;
+  width: 200px;
+  left: -45px;
+  margin-top: -45px;
+  padding-top: 2px;
+}
+
 .text h1 {
   position: absolute;  
   z-index: 2;
