@@ -532,14 +532,12 @@ html, body {
   text-shadow: 0 0 30px rgb(61, 1, 85), 0 0 2px rgb(225, 174, 246), 0 0 40px white;
 }
 
-
 @media only screen and (max-width: 600px) {
   .nav {
     top: 10%;
-    left: 37px; 
+    left: 10%; 
     font-size: 14px;
     position: absolute;
-    width: 80vw;
   }
 
   .socials {
