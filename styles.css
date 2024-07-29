@@ -590,28 +590,32 @@ html, body {
     margin-bottom: 10px;
   }
 
-  .project_images {
-    height: 200px;
-    width: 374px; 
-    padding-left: 20px;
+  .project_container {
+    width: 100vw;
+}
+
+  .project_container img {
+    height: auto;
+    width: 300px; 
+    padding-left: 0px;
   }
 
   .projects_section h1 {
     margin-top: 50px;
     font-size: 40px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   .projects_section h2 {
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   .projects_section p {
     font-size: 14px;
     padding-left: 0px;
-    padding-right: 0px;
-    width: 300px;
+    padding-right: 100px;
+    width: 50vw;
   }
 
   .button {
@@ -620,13 +624,7 @@ html, body {
   }
 
   .button_text a {
-    font-size: 14px;
-    margin-right: 25px;
-    margin-left: -20px;
-  }
-
-  .project_container ul {
-    margin-right: 40px;
+    font-size: 12px;
   }
 
   .project_container ul li {
@@ -635,6 +633,7 @@ html, body {
 
   .projects_wrapper {
     grid-template-columns: 1fr;
+    gap: 5px;
   }
 
   .resume_section h1 {
