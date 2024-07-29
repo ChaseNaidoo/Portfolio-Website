@@ -606,7 +606,6 @@ html, body {
   .projects_section p {
     font-size: 14px;
     padding-left: 0px;
-    padding-right: 100px;
     width: 50vw;
   }
 
@@ -673,3 +672,22 @@ html, body {
     font-size: 14px;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .logo_portfolio img {
+    padding-top: 2%;
+  }
+
+  .socials {
+    right: 5%;
+  }
+
+  .text h1 {
+    font-size: 4em;
+  }
+
+  .stack p  {
+    width: 80vw;
+  }
+}
+
