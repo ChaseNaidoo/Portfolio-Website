@@ -682,12 +682,11 @@ html, body {
     right: 5%;
   }
 
-  .text h1 {
-    font-size: 4em;
-  }
-
   .stack p  {
     width: 80vw;
   }
-}
 
+  .contact_form {
+    margin-right: 8%;
+  }
+}
