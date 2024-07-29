@@ -544,6 +544,7 @@ html, body {
     top: 55%;
     position: absolute;
     background: none;
+    display: none;
   }
 
   .socials ul li a {
