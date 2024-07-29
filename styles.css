@@ -541,14 +541,13 @@ html, body {
   }
 
   .socials {
-    top: 64%;
+    top: 55%;
     position: absolute;
     background: none;
   }
 
   .socials ul li a {
     font-size: 14px;
-    padding-left: 110px;
   }
 
   .socials .download_button {
