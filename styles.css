@@ -535,7 +535,7 @@ html, body {
 @media only screen and (max-width: 600px) {
   .nav {
     top: 10%;
-    left: 16%;
+    left: 8%;
     font-size: 14px;
     position: absolute;
   }
@@ -549,7 +549,7 @@ html, body {
   }
 
   .logo_portfolio img {
-    left: 25%;
+    left: 20%;
     position: absolute;
   }
 
@@ -562,15 +562,15 @@ html, body {
   .desription h2 {
     padding-left: 50px;
     padding-right: 20px;
-    padding-top: 50%; 
+    padding-top: 54%; 
     font-size: 28px;
     color: rgb(225, 200, 250);
   }
 
   .stack p {
-    padding-top: 60%;
+    padding-top: 65%;
     padding-left: 50px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .stack ul {
